@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_bbe9c4c607234172a38319936575d81a {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bbe9c4c607234172a38319936575d81a" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_bbe9c4c607234172a38319936575d81a = L.map(
+                                  'map_bbe9c4c607234172a38319936575d81a',
+                                  {center: [40.7128,-74.006],
+                                  zoom: 11,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_f875ef077c744cd896f119c8f923a64c = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_bbe9c4c607234172a38319936575d81a);
+        
+    
+            var circle_marker_8ad0c167f659402da608736b0ee17a1a = L.circleMarker(
+                [40.60613336268842,-74.17904376983643],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bbe9c4c607234172a38319936575d81a);
+            
+    
+            var popup_b298177197814d939fc1af0af708639d = L.popup({maxWidth: '300'});
+
+            
+                var html_08a03b904b7c4eff88225f690e89770b = $('<div id="html_08a03b904b7c4eff88225f690e89770b" style="width: 100.0%; height: 100.0%;">[&#39;Staten Island, NY 10311&#39;, &#39;United States&#39;], NY</div>')[0];
+                popup_b298177197814d939fc1af0af708639d.setContent(html_08a03b904b7c4eff88225f690e89770b);
+            
+
+            circle_marker_8ad0c167f659402da608736b0ee17a1a.bindPopup(popup_b298177197814d939fc1af0af708639d);
+
+            
+        
+    
+
+            var marker_a0d536a9dd1542eab0ba9600c1b3e40d = L.marker(
+                [40.61900594093755,-73.99037472596906],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_bbe9c4c607234172a38319936575d81a);
+            
+    
+            var popup_474af69cede34118ba6f017a2a63cd49 = L.popup({maxWidth: '300'});
+
+            
+                var html_e7b86c86e35343babcab5bd0327344ac = $('<div id="html_e7b86c86e35343babcab5bd0327344ac" style="width: 100.0%; height: 100.0%;">Bensonhurst, NY</div>')[0];
+                popup_474af69cede34118ba6f017a2a63cd49.setContent(html_e7b86c86e35343babcab5bd0327344ac);
+            
+
+            marker_a0d536a9dd1542eab0ba9600c1b3e40d.bindPopup(popup_474af69cede34118ba6f017a2a63cd49);
+
+            
+        
+    
+
+            var marker_eb0c142479e94498bf4d5213caef8d0a = L.marker(
+                [40.69042711809854,-73.95468677509598],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_bbe9c4c607234172a38319936575d81a);
+            
+    
+            var popup_3497e30edf474906bcf6208b98f1e633 = L.popup({maxWidth: '300'});
+
+            
+                var html_c28187a28b9a473cb7c4a87077c8b207 = $('<div id="html_c28187a28b9a473cb7c4a87077c8b207" style="width: 100.0%; height: 100.0%;">Bedford-Stuyvesant, NY</div>')[0];
+                popup_3497e30edf474906bcf6208b98f1e633.setContent(html_c28187a28b9a473cb7c4a87077c8b207);
+            
+
+            marker_eb0c142479e94498bf4d5213caef8d0a.bindPopup(popup_3497e30edf474906bcf6208b98f1e633);
+
+            
+        
+    
+
+            var marker_6b3b13e8bf1a4571bfa5ba41a4b34fa3 = L.marker(
+                [40.751591431346306,-73.9741214009634],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_bbe9c4c607234172a38319936575d81a);
+            
+    
+            var popup_c5b8f26039034279854fb00eca6503a5 = L.popup({maxWidth: '300'});
+
+            
+                var html_e4fb0d9688634c45bb6d4aa5ddefc153 = $('<div id="html_e4fb0d9688634c45bb6d4aa5ddefc153" style="width: 100.0%; height: 100.0%;">Turtle Bay, NY</div>')[0];
+                popup_c5b8f26039034279854fb00eca6503a5.setContent(html_e4fb0d9688634c45bb6d4aa5ddefc153);
+            
+
+            marker_6b3b13e8bf1a4571bfa5ba41a4b34fa3.bindPopup(popup_c5b8f26039034279854fb00eca6503a5);
+
+            
+        
+</script>
